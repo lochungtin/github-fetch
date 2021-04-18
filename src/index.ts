@@ -25,26 +25,28 @@ const constructReadmeURL = (params: fetchReadmeConfig) => {
 	return baseURL + '/' + params.username + '/' + params.repo + '/' + branch + '/README.md';
 };
 
-const fetchFile = async (params: fetchConfig) => {
-	try {
-		const res = await axios.get(constructURL(params));
-		return res.data;
-	}
-	catch (err: any) {
-		console.warn(err.message);
-		return "";
-	}
+class GHFetch {
+	static fetchFile = async (params: fetchConfig) => {
+		try {
+			const res = await axios.get(constructURL(params));
+			return res.data;
+		}
+		catch (err: any) {
+			console.warn(err.message);
+			return "";
+		}
+	};
+
+	static fetchReadme = async (params: fetchReadmeConfig) => {
+		try {
+			const res = await axios.get(constructReadmeURL(params));
+			return res.data;
+		}
+		catch (err: any) {
+			console.warn(err.message);
+			return "";
+		}
+	};
 };
 
-const fetchReadme = async (params: fetchReadmeConfig) => {
-	try {
-		const res = await axios.get(constructReadmeURL(params));
-		return res.data;
-	}
-	catch (err: any) {
-		console.warn(err.message);
-		return "";
-	}
-};
-
-export { fetchFile, fetchReadme };
+export = GHFetch;
