@@ -1,6 +1,6 @@
 {
   "name": "@enigmaoffline/github-fetch",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "API to fetch raw github content",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,8 +14,14 @@
     "type": "git",
     "url": "https://github.com/lochungtin/github-fetch.git"
   },
+  "keywords": [
+    "github",
+    "files",
+    "readme",
+    "fetch"
+  ],
   "author": "enigmaoffline",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1"
   },
