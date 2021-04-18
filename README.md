@@ -55,3 +55,5 @@ Fetch Parameters for `fetchReadme()`
 |    branch     |    no     | master  | String |
 
 **NOTE** that all names are case sensitive.
+
+<a href="https://github.com/lochungtin/github-fetch/blob/master/LICENSE">LICENSE - MIT - Lo Chung Tin</a>
