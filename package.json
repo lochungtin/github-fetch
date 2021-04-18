@@ -1,6 +1,6 @@
 {
-  "name": "github-fetch",
-  "version": "1.0.0",
+  "name": "@enigmaoffline/github-fetch",
+  "version": "1.0.1",
   "description": "API to fetch raw github content",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

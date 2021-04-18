@@ -5,7 +5,7 @@ Fetch any raw file from a public github repository
 ## Install
 
 Installing with npm
-`npm i --save github-fetch`
+`npm i --save @enigmaoffline/github-fetch`
 
 ## Usage
 
